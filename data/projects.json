@@ -1,0 +1,55 @@
+{
+  "site": {
+    "name": "Reikai",
+    "tagline": "Curated open-source tools for privacy, hardening and debloating.",
+    "description": "A free, open-source hub of browser hardening and privacy tools. Built by the community, for the community.",
+    "accent": "#FF7139",
+    "github": "https://github.com/apauruseya-stack",
+    "installOneLiner": "irm https://raw.githubusercontent.com/apauruseya-stack/firefox-debloat/main/install/install.ps1 | iex"
+  },
+  "categories": [
+    { "id": "browser-hardening", "name": "Browser Hardening", "icon": "🛡️", "order": 1 },
+    { "id": "enhancement", "name": "Enhancement", "icon": "✨", "order": 2 },
+    { "id": "utilities", "name": "Utilities", "icon": "🧰", "order": 3 }
+  ],
+  "projects": [
+    {
+      "id": "firefox-debloat",
+      "name": "firefox-debloat",
+      "tagline": "Layered, reversible Firefox hardening",
+      "description": "Stacks firefox-debloat + Arkenfox + Betterfox + your overrides on the official Mozilla Firefox binary. Telemetry, ads, AI and fingerprinting off. uBlock Origin, Proton Pass, Privacy Badger, TWP, PopUpOFF, Popup Blocker and CanvasBlocker auto-installed. Brave Search by default. One-command revert. Works on Firefox, Zen Browser, Windows and Linux.",
+      "category": "browser-hardening",
+      "tags": ["firefox", "privacy", "hardening", "arkenfox", "betterfox", "debloat", "zen-browser", "telemetry", "fingerprinting", "uBlock Origin"],
+      "status": "stable",
+      "version": "v1.1.1",
+      "highlights": [
+        "One-line installer with SHA-256 verification",
+        "Presets: quick, recommended, strict, keep-sync",
+        "-Preview mode (shows changes, writes nothing)",
+        "Ownership ledger for surgical revert",
+        "Zen Browser verified (1.23.3b)",
+        "CI green on Windows + Linux"
+      ],
+      "links": {
+        "github": "https://github.com/apauruseya-stack/firefox-debloat",
+        "docs": "https://github.com/apauruseya-stack/firefox-debloat#readme",
+        "install": "https://raw.githubusercontent.com/apauruseya-stack/firefox-debloat/main/install/install.ps1",
+        "release": "https://github.com/apauruseya-stack/firefox-debloat/releases/latest"
+      }
+    },
+    {
+      "id": "reikai-enhance",
+      "name": "reikai-enhance",
+      "tagline": "Coming soon",
+      "description": "A companion enhancement toolkit. Planned: extra tweaks, themes and integrations that build on top of firefox-debloat. Not available yet.",
+      "category": "enhancement",
+      "tags": ["enhancement", "planned"],
+      "status": "planned",
+      "version": null,
+      "highlights": [],
+      "links": {
+        "github": "https://github.com/apauruseya-stack"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reikai - Curated open-source tools for privacy and hardening</title>
+  <meta name="description" content="A free, open-source hub of browser hardening and privacy tools. Firefox debloat, Arkenfox, Betterfox, and more." />
+  <meta name="theme-color" content="#0a0e14" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF7139'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>R</text></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="#">
+        <span class="logo-mark">R</span>
+        <span id="site-title">Reikai</span>
+      </a>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search" class="search-input" type="search" placeholder="Search projects, tags, descriptions... (press /)" autocomplete="off" />
+      </div>
+      <div class="topbar-actions">
+        <a class="btn-ghost" href="https://github.com/apauruseya-stack" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-badge"><span class="dot"></span> Free &amp; open source</div>
+      <h1>Curated tools for <span class="accent">privacy</span> and <span class="accent">hardening</span></h1>
+      <p id="site-tagline">Loading...</p>
+      <p id="site-desc" style="font-size:15px;color:var(--text-3);max-width:640px;margin:0 auto 24px;"></p>
+
+      <div class="install-box">
+        <code id="one-liner">irm https://raw.githubusercontent.com/apauruseya-stack/firefox-debloat/main/install/install.ps1 | iex</code>
+        <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+      <div class="hero-links">
+        <a class="primary" href="https://github.com/apauruseya-stack/firefox-debloat" target="_blank" rel="noopener">View firefox-debloat</a>
+        <a class="secondary" href="#projects">Browse projects</a>
+      </div>
+
+      <div id="stats" class="stats"></div>
+    </section>
+
+    <section id="projects"></section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Reikai. Free and open source.</span>
+      <span>
+        <a href="https://github.com/apauruseya-stack">GitHub</a> ·
+        <a href="https://github.com/apauruseya-stack/firefox-debloat">firefox-debloat</a> ·
+        <a href="https://github.com/apauruseya-stack/apauruseya-stack">Source of this site</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
